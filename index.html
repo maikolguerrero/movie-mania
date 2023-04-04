@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Mania</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/loader.css">
+</head>
+
+<body>
+
+  <div class="loader"></div>
+  <div id="contenedor_body">
+    <header>
+      <div class="contenedor_logo">
+        <a href="#">
+          <img class="logo" src="images/logo.png" alt="Movie Mania">
+          <h1>Movie Mania</h1>
+        </a>
+      </div>
+      <div class="contenedor_busqueda">
+        <div>
+          <input type="text" id="buscar-peliculas" placeholder="Buscar películas">
+          <button id="search-button">Buscar</button>
+        </div>
+        <div id="sugerencias"></div>
+      </div>
+    </header>
+
+    <main>
+      <section id="contenedor-peliculas-busqueda">
+        <div class="lista-peliculas">
+          <h2 class="titulo-lista-pelicula" id="titulo-busqueda"></h2>
+          <p id="sin-resultados">No Hay Resultados</p>
+          <ul id="peliculas-busqueda" class="peliculas">
+            <!-- Aquí se van a agregar dinámicamente los resultados de la búsqueda -->
+        </div>
+      </section>
+      </ul>
+      <section id="contenedor-peliculas-populares">
+        <div class="lista-peliculas">
+          <h2 class="titulo-lista-pelicula" id="titulo-resultado">Películas Populares</h2>
+          <ul id="peliculas-populares" class="peliculas">
+            <!-- Aquí se van a agregar dinámicamente las películas populares -->
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Movie Mania</p>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

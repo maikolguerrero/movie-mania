@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Mania</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/detalles_pelicula.css">
+  <link rel="stylesheet" href="styles/loader.css">
+</head>
+
+<body>
+  <div class="loader"></div>
+  <div id="contenedor_body">
+    <header>
+      <div class="contenedor_logo">
+        <a href="index.html">
+          <img class="logo" src="images/logo.png" alt="Movie Mania">
+          <h1>Movie Mania</h1>
+        </a>
+      </div>
+      <div class="contenedor_busqueda">
+        <a href="index.html">
+          <button id="search-button">Volver</button>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <div class="contenedor-detalles-pelicula">
+        <div class="detalle-pelicula">
+          <img src="" alt="" class="imagen-pelicula" id="imagen-pelicula">
+          <div class="informacion-pelicula">
+            <h2 class="titulo-detalle-pelicula" id="titulo-pelicula"></h2>
+            <p><strong>Calificación:</strong> <span id="calificacion-pelicula"></span></p>
+            <p><strong>Fecha de estreno:</strong> <span id="fecha-estreno-pelicula"></span></p>
+            <p><strong>Géneros:</strong> <span id="genero-pelicula"></span></p>
+            <p><strong>Duración:</strong> <span id="duracion-pelicula"></span></p>
+            <p><strong>Descripción:</strong> <span id="descripcion-pelicula"></span></p>
+          </div>
+        </div>
+        <div class="contenedor-actores">
+          <h3 class="titulos-actores-trailer">Actores</h3>
+          <div class="carrusel-container">
+            <ul id="carrusel-reparto">
+              <!-- Aquí se agregan los elementos generados con JavaScript -->
+            </ul>
+            <button class="carrusel-btn carrusel-btn-prev" id="carrusel-btn-prev">&#8249;</button>
+            <button class="carrusel-btn carrusel-btn-next" id="carrusel-btn-next">&#8250;</button>
+            <div class="carrusel-dots"></div>
+          </div>
+        </div>
+        <div class="contenedor-trailer">
+          <h3 class="titulos-actores-trailer">Trailer</h3>
+          <div class="video-container">
+            <iframe width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+  <script src="appDetallesPelicula.js"></script>
+</body>
+</html>

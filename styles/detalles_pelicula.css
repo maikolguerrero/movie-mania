@@ -1,0 +1,256 @@
+.titulos-actores-trailer {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.carrusel-container {
+    position: relative;
+}
+
+#carrusel-reparto {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+#carrusel-reparto::-webkit-scrollbar {
+    display: none;
+}
+
+.actor {
+    flex: 0 0 auto;
+    width: 200px;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    scroll-snap-align: center;
+    transition: transform 0.5s;
+}
+
+.actor:hover {
+    transform: scale(1.05);
+}
+
+.actor img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.actor h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+}
+
+.actor h4 {
+    font-size: 1rem;
+    margin: 0 10px 10px;
+    text-align: center;
+}
+
+.carrusel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.carrusel-btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.carrusel-btn-prev {
+    left: 10px;
+}
+
+.carrusel-btn-next {
+    right: 10px;
+}
+
+.carrusel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.carrusel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carrusel-dot-active {
+    background-color: #fff;
+}
+
+
+.detalle-pelicula {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;  
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.contenedor-detalles-pelicula {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.imagen-y-detalle {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+
+.imagen-pelicula {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+
+.informacion-pelicula {
+    flex: 1;
+    margin-top: 0;
+}
+
+.imagen-y-detalle {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.imagen-pelicula {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.titulo-detalle-pelicula {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.informacion-pelicula p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.informacion-pelicula p strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.informacion-pelicula p span {
+    color: #666;
+}
+
+.informacion-pelicula p:first-of-type {
+    margin-top: 0;
+}
+
+.informacion-pelicula p:last-of-type {
+    margin-bottom: 0;
+}
+
+
+.contenedor-actores {
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.contenedor-trailer {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.video-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+    .detalle-pelicula {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .imagen-pelicula {
+        margin-bottom: 20px;
+    }
+
+    .carrusel-btn {
+        display: none;
+    }
+}
